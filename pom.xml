@@ -19,6 +19,8 @@
 
    <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
     </properties>
     <build>
         <plugins>
@@ -112,6 +114,12 @@
 <!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
 
 
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.24</version>
+    <scope>provided</scope>
+</dependency>
 
 
    </dependencies>
