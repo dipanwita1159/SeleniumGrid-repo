@@ -58,25 +58,7 @@ public class StartBrowser {
 	  @Test public static WebDriver aunchapp(String browser,String Url) throws MalformedURLException { 
 		  String URL = "//button[@aria-label='Search']";
 	  
-	    if (browser.equalsIgnoreCase("firefox")) {
-	  System.out.println(" Executing on FireFox");
-	  String Node ="http://localhost:4444/wd/hub";
-	  DesiredCapabilities cap =DesiredCapabilities.firefox(); 
-	  cap.setBrowserName("firefox");
-	  cap.setPlatform(Platform.ANY);
-	  
-	  driver = new RemoteWebDriver(new URL(Node), cap);
-	  // Puts an Implicit wait,
-	  // Will wait for 10 seconds before throwing exceptio
-	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  
-	  // Launch website
-	  driver.navigate().to(URL);
-	  driver.manage().window().maximize(); 
-	  }
-	    
-	    
-	    else if(browser.equalsIgnoreCase("chrome")) {
+	    if(browser.equalsIgnoreCase("chrome")) {
 	  System.out.println(" Executing on CHROME");
 	  String Node = "http://localhost:4444/wd/hub"; 
 	  DesiredCapabilities cap = DesiredCapabilities.chrome(); 
