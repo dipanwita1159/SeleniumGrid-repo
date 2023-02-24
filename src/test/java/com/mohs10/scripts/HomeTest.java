@@ -18,7 +18,9 @@ public class HomeTest extends StartBrowser {
 	  Thread.sleep(10000); driver.close();}
 	  
 	 
-	  
+	   @Test public void edge() throws Exception { WebDriver
+	  driver=StartBrowser.beforeClass("firefox", "https://mohs10.io/"); CommonFuns
+	  veri = new CommonFuns(); Thread.sleep(5000); driver.close();}
 	 
 	
 	
